@@ -79,18 +79,17 @@ function Navbar_() {
                 display: { xs: "block", md: "none" },
               }}>
               {pages.map((page) => (
-                <MenuItem
-                  key={page.key}
-                  href={`#${page.key}`}
-                  onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page.value}</Typography>
+                <MenuItem key={page.key}>
+                  <Button href={`#${page.key}`} onClick={handleCloseNavMenu}>
+                    <Typography textAlign="center">{page.value}</Typography>
+                  </Button>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
 
           <Typography
-            variant="h4"
+            variant="h6"
             noWrap
             component="a"
             href="/"
@@ -114,6 +113,8 @@ function Navbar_() {
             }}>
             {pages.map((page) => (
               <Button
+                variant="text"
+                size="large"
                 key={page.key}
                 href={`#${page.key}`}
                 sx={{
@@ -124,7 +125,7 @@ function Navbar_() {
                     opacity: 0.75,
                   },
                 }}>
-                {page.value}
+                <Typography variant="h7">{page.value}</Typography>
               </Button>
             ))}
           </Box>

@@ -1,0 +1,26 @@
+.feeds-container{
+    width:99vw ;
+    height: 40vh;
+    display: flex;
+   flex-flow: row;
+   gap: 10px 20px;
+   justify-content:flex-start;
+   align-items: center;
+   background-color: antiquewhite;
+}
+.feed-item{
+    height: 10vh;
+    width: 10vw;
+    background-color: brown;
+    border: 2px solid black;
+    flex-grow: 1;
+}
+.item3{
+    background-color: aquamarine;
+    order: -1;
+    /* flex-grow: 3; */
+}
+.item4{
+    background-color: blue;
+    /* flex-grow: 2; */
+}

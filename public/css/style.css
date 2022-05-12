@@ -1,8 +1,6 @@
 *,
 *::after,
 *::before {
-  margin: 0;
-  padding: 0;
   box-sizing: inherit;
 }
 html{
@@ -14,7 +12,7 @@ body {
   font-weight: 400;
   line-height: 1.7;
   color: #141b35;
-  margin: 0;
+  margin: 10px !important;
   padding: 0;
   box-sizing: border-box;
   width: 100%;

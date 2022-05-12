@@ -1,7 +1,7 @@
 // import { Container } from "@mui/material";
 import React from "react";
+import Logo from "../components/Logo";
 import "../style/home.css";
-import logo from "../assets/logo.png";
 function Home({ id }) {
   return (
     <div id={id} className="home-container">
@@ -10,7 +10,7 @@ function Home({ id }) {
           <div class="fingarprint"></div>
           {/* <h3>Scanning ....</h3> */}
         </div>
-        <img className="hero-logo" src={logo} alt="logo.png"></img>
+        <Logo className="hero-logo" />
       </div>
     </div>
   );
